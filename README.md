@@ -7,7 +7,7 @@ Ancient-DNA methods and notes for *Vitis*: damage, authentication, aDNA-oriented
 ## This is not
 
 - Not the modern 167K product → [grapeancestry](https://github.com/Xuzhen-Li/grapeancestry)
-- Not chip design → [grapeancestry/chip](https://github.com/Xuzhen-Li/grapeancestry/tree/main/chip)
+- Not chip design → [grapeancestry/chip](https://github.com/Xuzhen-Li/grapeancestry)
 - Not plastid assembly → [grapevine-plastid](https://github.com/Xuzhen-Li/grapevine-plastid)
 - Not theory dossiers → [genomics-theory-mining](https://github.com/Xuzhen-Li/genomics-theory-mining)
 
