@@ -4,7 +4,7 @@ English | [中文](README.zh.md)
 
 Ancient-DNA methods and notes for *Vitis*: damage, authentication, aDNA-oriented capture, and projection onto modern panels.
 
-[[TODO-TEXT]] <!-- T1: status paragraph without em dash -->
+Status: public placeholder. No pipeline, no plant-specific protocols, and no demo data here yet. Earlier checklist drafts were generic vertebrate aDNA recipes and were removed because they were not lab practice for this line.
 
 ## This is not
 
@@ -15,6 +15,6 @@ Ancient-DNA methods and notes for *Vitis*: damage, authentication, aDNA-oriented
 
 ## What belongs here later
 
-[[TODO-TEXT]] <!-- T2: "What belongs here later" sentence without em dashes -->
+Methods and notes only, added when they are real for plant or grapevine aDNA, not unpublished genotypes or private site coordinates.
 
-**Author:** Xuzhen Li · [ORCID](https://orcid.org/0000-0003-3670-6657)
+**Author:** Xuzhen Li - [ORCID](https://orcid.org/0000-0003-3670-6657)
