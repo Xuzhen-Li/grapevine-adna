@@ -107,4 +107,5 @@ for bam in SAMPLE_{1..19}.merged.rmdup.MarkD.fixed.bam ; do
 done
 
 
-## genotyping
+
+```
