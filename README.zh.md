@@ -487,3 +487,42 @@ DS14 中已收录的公开发表葡萄古DNA数据集，以及用于流程测试
 - **hapROH**（工具）— 借助单倍型参考面板，从低覆盖度数据检测 ROH。按人类数据（1240k / 千人基因组面板）开发和测试。不能用来推断无性系历史：克隆繁殖不产生 ROH。 输入：pseudo-haploid or low-coverage genotypes, reference panel。输出：ROH, inbreeding。版本：0.70（GitHub/PyPI hapROH 0.70; Bioconda 0.64）。 [doi:10.1038/s41467-021-25289-w](https://doi.org/10.1038/s41467-021-25289-w) · [link](https://github.com/hringbauer/hapROH)  
   注：Human-specific as distributed. Use on Vitis only after building a Vitis phased haplotype panel and validating on modern grapes downsampled to the target depth; unvalidated results must not be reported. ROH reflects inbreeding at the sexual origin of the sampled genotype, not centuries of clonal propagation. Prefer species-general ROHan, or bcftools roh when depth is sufficient. Newest is 0.70 on GitHub/PyPI; Bioconda lagged at 0.64.
 - **ngsRelate**（工具）— 用基因型似然估计亲缘，适用于低覆盖度数据。 输入：ANGSD genotype likelihoods。输出：relatedness。版本：2.3.1（GitHub ANGSD/NgsRelate + Bioconda, 2026-11-14 CST）。 [doi:10.1093/gigascience/giz034](https://doi.org/10.1093/gigascience/giz034) · [link](https://github.com/ANGSD/NgsRelate)
+
+
+## 2026-11-15 追加的教学章节
+
+以上各行是仓库现有首页（提交 b6e4302e，2026-11-15 17:29 CST）。本节只追加，不替换首页。上面的每一行都保持原样。
+
+本次追加在 live 的 `README.md`、`README.zh.md` 和 `catalog/CATALOG.tsv` 末尾追加内容，并新增教学文件。不修改 live 的 `scripts/02_map_adna.sh` 和 `scripts/03_dedup.sh`。README 和目录里已有的每一行都保持原样。
+
+### 对 live 首页行的勘误（只做指针；live 各行不改）
+
+下面两条 live 首页说法，在教学上由相应章节和目录勘误行取代。live 原文本身不改。
+
+- live 第 286 行（schmutzi：“为人类设计的线粒体污染估计。不是葡萄核基因组污染工具。”）— 见 [docs/03_contamination.md](docs/03_contamination.md) 和目录 E001 行。官方 schmutzi README 的 Nuclear 节写明，contDeam 可在所列前提下用于核数据，风险自负；核样本推荐 DICE。
+- live 第 264 行（pyDamage：“适合参考很多的情况（宏基因组或竞争性比对）”）— 见 [docs/02_authentication_damage.md](docs/02_authentication_damage.md) 和目录 E004 行。按 contig 估计损伤的说明面向宏基因组；不把它写成竞争性比对工具。
+
+live 的 hapCon 备注（第 285 行）和 live 目录 hapCon 行（CATALOG 第 40 行）写有 “Keep the entry as a warning, like schmutzi.” 这一比较由扩展后的 E001 勘误覆盖；这些 live 行也不改。
+
+### 校验清单
+
+live 的 `SHA256SUMS`（本次追加不改）记录原始文件（`README.md`、`README.zh.md`、`ADDITIONS.tsv`、`catalog/CATALOG.tsv`、`docs/WORKFLOW.md` 和 `docs/WORKFLOW.zh.md`）的哈希。本次追加追加 README 和目录之后，那份较早清单里的 README 和 CATALOG 哈希将不再匹配。`SHA256SUMS.v2` 记录后来新增或追加的那些文件的哈希。`ADDITIONS.tsv` 是 live 目录追加前的一份冻结副本（与追加前的 live CATALOG 哈希相同），本次追加不更新它。
+
+### 新增或修订的教学文件
+
+- `CHANGELOG.md` — 这些教学文件的公开修订摘要
+- `SHA256SUMS.v2` — 后来新增或追加的那些文件的哈希（本次追加唯一的额外清单）
+- `DOI_CHECKS.tsv`、`DOI_CHECKS.NOTES.md`
+- `SOURCES_READ.tsv`
+- `REMOVALS.md`、`REMOVALS.zh.md` — 仅建议淘汰清单，推荐方案 B，这里不删除任何文件
+- `docs/01_published_grape_adna.md` 及 `.zh.md`
+- `docs/02_authentication_damage.md` 及 `.zh.md`
+- `docs/03_contamination.md` 及 `.zh.md`
+- `docs/04_capture_shotgun_lowcov.md` 及 `.zh.md`
+- `figures/F1_damage_patterns_by_library.svg`、`figures/F2_adna_decision_route.svg`
+- `scripts/02_map_adna.v2.sh`、`scripts/03_dedup.v2.sh` — 新文件名下的帮助 / `--dry-run` 封装
+- `scripts/figures/copy_adna_schematics.py` — 只复制上述两张 SVG，不生成图
+
+live 的 `scripts/README.md` 不改。因此它的 “Tested?” 表仍只列出 `02_map_adna.sh` 和 `03_dedup.sh`，不会列出 `02_map_adna.v2.sh` 或 `03_dedup.v2.sh`。这两个 `.v2.sh` 封装只是帮助 / `--dry-run` 文档，并不替代 live 脚本。它们列在本节和 [CHANGELOG.md](CHANGELOG.md) 中。
+
+这些教学文件的修订记录见 [CHANGELOG.md](CHANGELOG.md)。

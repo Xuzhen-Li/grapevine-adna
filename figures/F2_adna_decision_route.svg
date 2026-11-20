@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="t2 d2">
+  <title id="t2">Decision route from screening to low-coverage calling</title>
+  <desc id="d2">Original schematic for grapevine-adna chapters 3 and 4. Screen endogenous content and damage, then deeper shotgun or capture, then plant-applicable contamination checks. hapCon is not a grape method. Imputation only after a pre-registered downsample test on modern grapes. Not a pipeline we ran.</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#333"/>
+    </marker>
+  </defs>
+  <rect width="960" height="520" fill="#fbfaf6"/>
+  <text x="480" y="26" text-anchor="middle" font-family="Georgia, serif" font-size="16">From screening to a low-coverage genotype (schematic)</text>
+  <text x="480" y="46" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#444">Original figure. Complements docs/WORKFLOW.md; not a run we performed.</text>
+
+  <rect x="40" y="70" width="200" height="64" rx="6" fill="#fff" stroke="#333"/>
+  <text x="140" y="96" text-anchor="middle" font-family="Georgia, serif" font-size="12">Extract + library</text>
+  <text x="140" y="114" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#444">blanks sequenced</text>
+
+  <rect x="280" y="70" width="200" height="64" rx="6" fill="#fff" stroke="#333"/>
+  <text x="380" y="96" text-anchor="middle" font-family="Georgia, serif" font-size="12">Shallow screen</text>
+  <text x="380" y="114" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#444">damage + endogenous content</text>
+
+  <rect x="520" y="40" width="200" height="54" rx="6" fill="#fdecea" stroke="#922"/>
+  <text x="620" y="62" text-anchor="middle" font-family="Georgia, serif" font-size="12">Stop or redesign</text>
+  <text x="620" y="80" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#444">if damage or yield unusable</text>
+
+  <rect x="520" y="110" width="200" height="54" rx="6" fill="#fff" stroke="#333"/>
+  <text x="620" y="132" text-anchor="middle" font-family="Georgia, serif" font-size="12">Deeper shotgun or capture</text>
+  <text x="620" y="150" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#444">then remap and dedup</text>
+
+  <rect x="760" y="70" width="160" height="64" rx="6" fill="#fff" stroke="#333"/>
+  <text x="840" y="96" text-anchor="middle" font-family="Georgia, serif" font-size="12">Contamination checks</text>
+  <text x="840" y="114" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#444">see chapter 3</text>
+
+  <line x1="240" y1="102" x2="280" y2="102" stroke="#333" marker-end="url(#a)"/>
+  <line x1="480" y1="102" x2="520" y2="67" stroke="#333"/>
+  <line x1="480" y1="102" x2="520" y2="137" stroke="#333"/>
+  <line x1="720" y1="137" x2="760" y2="102" stroke="#333"/>
+
+  <rect x="80" y="210" width="360" height="120" rx="6" fill="#fff" stroke="#333"/>
+  <text x="100" y="236" font-family="Georgia, serif" font-size="13">Do not use as grape recipes</text>
+  <text x="100" y="260" font-family="Georgia, serif" font-size="12">hapCon: male modern-human X chromosomes</text>
+  <text x="100" y="280" font-family="Georgia, serif" font-size="12">AuthentiCT: ss libraries only; not UDG or PMD-filtered</text>
+  <text x="100" y="300" font-family="Georgia, serif" font-size="12">schmutzi contDeam: nuclear use at own risk (README Nuclear); hapROH: human-oriented</text>
+
+  <rect x="480" y="210" width="400" height="120" rx="6" fill="#fff" stroke="#333"/>
+  <text x="500" y="236" font-family="Georgia, serif" font-size="13">Calling and imputation (chapter 4)</text>
+  <text x="500" y="260" font-family="Georgia, serif" font-size="12">Prefer likelihoods or haploid draws (repo judgement)</text>
+  <text x="500" y="280" font-family="Georgia, serif" font-size="12">Pseudo-haploid is not a heterozygosity estimate (repo judgement)</text>
+  <text x="500" y="300" font-family="Georgia, serif" font-size="12">GLIMPSE2 only after a pre-registered modern-grape downsample test</text>
+  <text x="500" y="318" font-family="Georgia, serif" font-size="11" fill="#444">UK Biobank accuracy figures are not grape figures</text>
+
+  <text x="480" y="370" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#444">Capture-versus-shotgun threshold for a grape pip: no published cutoff opened for these chapters [待确认].</text>
+  <text x="480" y="392" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#444">Same-clone claims still need authentication, blanks, and the tissue-origin caution in WORKFLOW (seed coat vs embryo [待确认]).</text>
+  <text x="480" y="430" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#666">Sources: chapters 2–4 claim–source tables (hapCon PMC9344841; AuthentiCT README; GLIMPSE2 PMC10335927).</text>
+</svg>
