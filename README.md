@@ -487,3 +487,42 @@ These tools are intentionally shared across both catalogues with identical detai
 - **hapROH** (tool) — ROH from low-coverage data using a haplotype reference panel. Designed and tested on human data (1240k / 1000 Genomes panels). Not a clonal-history method: clonal propagation does not create ROH. Input: pseudo-haploid or low-coverage genotypes, reference panel. Output: ROH, inbreeding. Version: 0.70 (GitHub/PyPI hapROH 0.70; Bioconda 0.64). [doi:10.1038/s41467-021-25289-w](https://doi.org/10.1038/s41467-021-25289-w) · [link](https://github.com/hringbauer/hapROH)  
   Note: Human-specific as distributed. Use on Vitis only after building a Vitis phased haplotype panel and validating on modern grapes downsampled to the target depth; unvalidated results must not be reported. ROH reflects inbreeding at the sexual origin of the sampled genotype, not centuries of clonal propagation. Prefer species-general ROHan, or bcftools roh when depth is sufficient. Newest is 0.70 on GitHub/PyPI; Bioconda lagged at 0.64.
 - **ngsRelate** (tool) — Relatedness from genotype likelihoods, including low-coverage data. Input: ANGSD genotype likelihoods. Output: relatedness. Version: 2.3.1 (GitHub ANGSD/NgsRelate + Bioconda, 2026-11-14 CST). [doi:10.1093/gigascience/giz034](https://doi.org/10.1093/gigascience/giz034) · [link](https://github.com/ANGSD/NgsRelate)
+
+
+## Teaching chapters added on 2026-11-15
+
+The lines above are the live repository homepage (commit b6e4302e, 2026-11-15 17:29 CST). This section is appended and does not replace that homepage. Every line above is unchanged.
+
+This addition appends material to the live `README.md`, `README.zh.md`, and `catalog/CATALOG.tsv`; it also adds new teaching files. It does not modify the live `scripts/02_map_adna.sh` or `scripts/03_dedup.sh`. Every existing live line in the README files and the catalogue is unchanged.
+
+### Errata for live homepage lines (pointers only; live lines unchanged)
+
+Two live homepage claims are superseded, as teaching, by the chapters and catalogue errata below. The live lines themselves are not edited.
+
+- Live L286 (`schmutzi`: “Mitochondrial contamination estimator written for humans. Not a grape nuclear contamination tool.”) — see [docs/03_contamination.md](docs/03_contamination.md) and catalogue row E001. The official schmutzi README Nuclear section says that contDeam can be used on nuclear data at the user's own risk under stated conditions; DICE is recommended for nuclear samples.
+- Live L264 (`pyDamage`: “useful when many references are involved (metagenomes or competitive mapping)”) — see [docs/02_authentication_damage.md](docs/02_authentication_damage.md) and catalogue row E004. Per-contig damage estimation is described for metagenomic use; it is not taught as a competitive-mapping tool.
+
+The live hapCon note (L285) and the live catalogue hapCon row (CATALOG L40) say “Keep the entry as a warning, like schmutzi.” That comparison is covered by the extended E001 note; those live lines are not edited.
+
+### Manifests
+
+The live `SHA256SUMS` file (not edited in this addition) covers the original files (`README.md`, `README.zh.md`, `ADDITIONS.tsv`, `catalog/CATALOG.tsv`, `docs/WORKFLOW.md`, and `docs/WORKFLOW.zh.md`). After the appended README and catalogue in this addition, the README and CATALOG hashes in that earlier manifest will no longer match. `SHA256SUMS.v2` covers the files added or extended later. `ADDITIONS.tsv` is a frozen earlier copy of the live catalogue (the same hash as the live CATALOG before these appended rows) and is not updated here.
+
+### New or revised teaching files
+
+- `CHANGELOG.md` — public summary of the teaching-file revisions
+- `SHA256SUMS.v2` — hashes for the files added or appended later (the current extra manifest)
+- `DOI_CHECKS.tsv`, `DOI_CHECKS.NOTES.md`
+- `SOURCES_READ.tsv`
+- `REMOVALS.md`, `REMOVALS.zh.md` — retirement proposal only; option B is recommended; nothing is deleted here
+- `docs/01_published_grape_adna.md` and `.zh.md`
+- `docs/02_authentication_damage.md` and `.zh.md`
+- `docs/03_contamination.md` and `.zh.md`
+- `docs/04_capture_shotgun_lowcov.md` and `.zh.md`
+- `figures/F1_damage_patterns_by_library.svg`, `figures/F2_adna_decision_route.svg`
+- `scripts/02_map_adna.v2.sh`, `scripts/03_dedup.v2.sh` — help / `--dry-run` wrappers under new filenames
+- `scripts/figures/copy_adna_schematics.py` — copies the two SVG files; it does not generate the drawings
+
+The live `scripts/README.md` is not edited. Its “Tested?” table therefore still lists `02_map_adna.sh` and `03_dedup.sh`, and does not list `02_map_adna.v2.sh` or `03_dedup.v2.sh`. Those `.v2.sh` wrappers are help / `--dry-run` documentation only; they do not replace the live scripts. They are listed in this section and in [CHANGELOG.md](CHANGELOG.md).
+
+See [CHANGELOG.md](CHANGELOG.md) for the revision history of these teaching files.
