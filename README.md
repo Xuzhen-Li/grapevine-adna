@@ -17,7 +17,7 @@ Status: this repository already contains capture scripts under `scripts/` and no
 - The modern 167K product: [grapeancestry](https://github.com/Xuzhen-Li/grapeancestry)
 - Chip design: [grapevine-chip](https://github.com/Xuzhen-Li/grapevine-chip)
 - Plastid assembly: [grapevine-plastid](https://github.com/Xuzhen-Li/grapevine-plastid)
-- Theory dossiers: [genomics-theory-mining](https://github.com/Xuzhen-Li/genomics-theory-mining)
+- Theory dossiers: [genomics-theory-book](https://github.com/Xuzhen-Li/genomics-theory-book)
 - Modern population-genetics catalogue (overlaps on purpose): [vitis-popgen](https://github.com/Xuzhen-Li/vitis-popgen)
 
 <!-- PROSE:CATALOG_NOTE -->
