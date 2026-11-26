@@ -17,7 +17,7 @@
 - 现代 167K 产品：[grapeancestry](https://github.com/Xuzhen-Li/grapeancestry)
 - 芯片设计：[grapevine-chip](https://github.com/Xuzhen-Li/grapevine-chip)
 - 质体组装：[grapevine-plastid](https://github.com/Xuzhen-Li/grapevine-plastid)
-- 理论汇编：[genomics-theory-mining](https://github.com/Xuzhen-Li/genomics-theory-mining)
+- 理论汇编：[genomics-theory-book](https://github.com/Xuzhen-Li/genomics-theory-book)
 - 现代群体遗传目录（有意重叠）：[vitis-popgen](https://github.com/Xuzhen-Li/vitis-popgen)
 
 <!-- PROSE:CATALOG_NOTE -->
