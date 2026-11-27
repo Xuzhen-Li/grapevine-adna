@@ -46,7 +46,7 @@ Status: this repository already contains capture scripts under `scripts/` and no
 16. [Key studies, public data and simulation](#section-16) (7)
 17. [Shared tools also catalogued in vitis-popgen](#section-17) (18)
 
-This page lists 128 entries (57 tools; the rest are workflows, protocols, papers, resources or ideas). The table form is [`ADDITIONS.tsv`](ADDITIONS.tsv) and [`catalog/CATALOG.tsv`](catalog/CATALOG.tsv).
+This page lists 128 entries (57 tools; the rest are workflows, protocols, papers, resources or ideas). The table form is [`catalog/CATALOG.tsv`](catalog/CATALOG.tsv).
 
 <a id="section-1"></a>
 ## 1. Sampling and archaeobotanical material
@@ -381,8 +381,8 @@ nf-core/eager 2.5.3 is the default community workflow (AM17), subject to a Nextf
   Note: Schubert et al. 2014 Nature Protocols DOI verified.
 - **nf-core/eager** (workflow) — Default end-to-end aDNA workflow in AM17: AdapterRemoval, bwa aln, DamageProfiler or mapDamage, DeDup or MarkDuplicates, Qualimap, preseq, optional PMDtools, Kraken2/MALT. Input: FASTQ, reference. Output: BAM, damage, QC MultiQC. Version: 2.5.3 (GitHub nf-core/eager 2.5.3 (2025-03-18); 3.0 Augsburg is not released (open milestone, 2026-11-14 CST)). [doi:10.7717/peerj.10947](https://doi.org/10.7717/peerj.10947) · [link](https://nf-co.re/eager)  
   Note: This is DSL1 and requires Nextflow >=20.07.1 and <=22.10.6. Version 3.0 is not released. Human contamination modules (ANGSD X-chromosome) must be turned off or ignored for grape.
-- **Existing capture scripts and notes** (workflow) — Already in this repository: AdapterRemoval, bwa aln, samtools q30, Picard MarkDuplicates, Qualimap, mapDamage, and mapping-stat collection. Input: paired FASTQ, VS1.final.fa (path is a placeholder in the notes). Output: per-sample BAM, damage, stats.all.tsv. Version: GitHub main fe75e89e, 2026-10-21 22:19 CST (Xuzhen-Li/grapevine-adna main, read-only audit 2026-11-14). [link](https://github.com/Xuzhen-Li/grapevine-adna/tree/main/scripts)  
-  Note: Files: scripts/adna_capture_pipeline_generator.sh, dsdna_preprocess.sh, collect_mapping_stats.sh, run_mapdamage.sh; notes/cap_test.md, check_pcrbias.md, mergeBAM.md. These files are existing material in the repository: a bioinformatics workflow for a capture test.
+- **Existing capture scripts and notes** (workflow) — Notes and a mapDamage wrapper from an earlier capture test remain: AdapterRemoval, bwa aln, samtools q30, Picard MarkDuplicates, Qualimap, and mapDamage. The capture-generator and mapping-stat scripts have been removed (see REMOVALS.md). Input: paired FASTQ, VS1.final.fa (path is a placeholder in the notes). Output: per-sample BAM, damage, stats.all.tsv. Version: GitHub main fe75e89e, 2026-10-21 22:19 CST (Xuzhen-Li/grapevine-adna main, read-only audit 2026-11-14). [link](https://github.com/Xuzhen-Li/grapevine-adna/tree/main/scripts)  
+  Note: Files still in the repository: scripts/run_mapdamage.sh; notes/cap_test.md, check_pcrbias.md, mergeBAM.md. Three older capture-test scripts are recorded in REMOVALS.md and are no longer in the tree.
 
 <a id="section-15"></a>
 ## 15. Plant- and grape-specific issues
@@ -506,7 +506,7 @@ The existing hapCon note (L285) and the existing catalogue hapCon row (CATALOG L
 
 ### Manifests
 
-The existing `SHA256SUMS` file (not edited in this update) covers the original files (`README.md`, `README.zh.md`, `ADDITIONS.tsv`, `catalog/CATALOG.tsv`, `docs/WORKFLOW.md`, and `docs/WORKFLOW.zh.md`). After the README and catalogue are appended in this update, the README and CATALOG hashes in that earlier manifest will no longer match. `SHA256SUMS.v2` covers the files added or extended later. `ADDITIONS.tsv` is an unchanged earlier copy of the existing catalogue (the same hash as the existing CATALOG before these appended rows) and is not updated here.
+The checksum manifest in this tree is `SHA256SUMS.v2`, covering teaching files added or extended after the original short list.
 
 ### New or revised teaching files
 
@@ -514,7 +514,7 @@ The existing `SHA256SUMS` file (not edited in this update) covers the original f
 - `SHA256SUMS.v2` — hashes for the files added or appended later (the current extra manifest)
 - `DOI_CHECKS.tsv`, `DOI_CHECKS.NOTES.md`
 - `SOURCES_READ.tsv`
-- `REMOVALS.md`, `REMOVALS.zh.md` — retirement proposal only; option B is recommended; nothing is deleted here
+- `REMOVALS.md`, `REMOVALS.zh.md` — record of capture-test scripts removed from the tree
 - `docs/01_published_grape_adna.md` and `.zh.md`
 - `docs/02_authentication_damage.md` and `.zh.md`
 - `docs/03_contamination.md` and `.zh.md`
@@ -523,6 +523,6 @@ The existing `SHA256SUMS` file (not edited in this update) covers the original f
 - `scripts/02_map_adna.v2.sh`, `scripts/03_dedup.v2.sh` — help / `--dry-run` wrappers under new filenames
 - `scripts/figures/copy_adna_schematics.py` — copies the two SVG files; it does not generate the drawings
 
-The existing `scripts/README.md` is not edited. Its “Tested?” table therefore still lists `02_map_adna.sh` and `03_dedup.sh`, and does not list `02_map_adna.v2.sh` or `03_dedup.v2.sh`. Those `.v2.sh` wrappers are help / `--dry-run` documentation only; they do not replace the existing scripts. They are listed in this section and in [CHANGELOG.md](CHANGELOG.md).
+The `scripts/README.md` file in this tree describes the remaining toy chain and wrappers. Its “Tested?” table therefore still lists `02_map_adna.sh` and `03_dedup.sh`, and does not list `02_map_adna.v2.sh` or `03_dedup.v2.sh`. Those `.v2.sh` wrappers are help / `--dry-run` documentation only; they do not replace the existing scripts. They are listed in this section and in [CHANGELOG.md](CHANGELOG.md).
 
 See [CHANGELOG.md](CHANGELOG.md) for the revision history of these teaching files.

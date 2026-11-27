@@ -46,7 +46,7 @@
 16. [关键研究、公开数据与模拟](#section-16) (7)
 17. [同时收入 vitis-popgen 的工具](#section-17) (18)
 
-本页共 128 条（其中工具 57 条；其余为流程、方案、文献、资源或想法）。表格形式见 [`ADDITIONS.tsv`](ADDITIONS.tsv) 和 [`catalog/CATALOG.tsv`](catalog/CATALOG.tsv)。
+本页共 128 条（其中工具 57 条；其余为流程、方案、文献、资源或想法）。表格形式见 [`catalog/CATALOG.tsv`](catalog/CATALOG.tsv)。
 
 <a id="section-1"></a>
 ## 1. 取样与植物考古材料
@@ -381,8 +381,8 @@ nf-core/eager 2.5.3 为默认的社区流程（AM17），其适用的 Nextflow �
   注：Schubert et al. 2014 Nature Protocols DOI verified.
 - **nf-core/eager**（流程）— AM17 中的默认端到端古DNA流程：AdapterRemoval、bwa aln、DamageProfiler 或 mapDamage、DeDup 或 MarkDuplicates、Qualimap、preseq，可选 PMDtools、Kraken2/MALT。 输入：FASTQ, reference。输出：BAM, damage, QC MultiQC。版本：2.5.3（GitHub nf-core/eager 2.5.3 (2025-03-18); 3.0 Augsburg is not released (open milestone, 2026-11-14 CST)）。 [doi:10.7717/peerj.10947](https://doi.org/10.7717/peerj.10947) · [link](https://nf-co.re/eager)  
   注：This is DSL1 and requires Nextflow >=20.07.1 and <=22.10.6. Version 3.0 is not released. Human contamination modules (ANGSD X-chromosome) must be turned off or ignored for grape.
-- **Existing capture scripts and notes**（流程）— 本仓库已有：AdapterRemoval、bwa aln、samtools q30、Picard MarkDuplicates、Qualimap、mapDamage，以及比对统计汇总。 输入：paired FASTQ, VS1.final.fa (path is a placeholder in the notes)。输出：per-sample BAM, damage, stats.all.tsv。版本：GitHub main fe75e89e, 2026-10-21 22:19 CST（Xuzhen-Li/grapevine-adna main, read-only audit 2026-11-14）。 [link](https://github.com/Xuzhen-Li/grapevine-adna/tree/main/scripts)  
-  注：文件：scripts/adna_capture_pipeline_generator.sh、dsdna_preprocess.sh、collect_mapping_stats.sh、run_mapdamage.sh；notes/cap_test.md、check_pcrbias.md、mergeBAM.md。这些是仓库里已有的材料，属于捕获测试的生物信息流程。
+- **Existing capture scripts and notes**（流程）— 本仓库仍保留一份较早捕获测试的笔记和 mapDamage 封装：AdapterRemoval、bwa aln、samtools q30、Picard MarkDuplicates、Qualimap 和 mapDamage。捕获生成和比对统计脚本已移除（见 REMOVALS.md）。 输入：paired FASTQ, VS1.final.fa (path is a placeholder in the notes)。输出：per-sample BAM, damage, stats.all.tsv。版本：GitHub main fe75e89e, 2026-10-21 22:19 CST（Xuzhen-Li/grapevine-adna main, read-only audit 2026-11-14）。 [link](https://github.com/Xuzhen-Li/grapevine-adna/tree/main/scripts)  
+  注：仍留在仓库中的文件：scripts/run_mapdamage.sh；notes/cap_test.md、check_pcrbias.md、mergeBAM.md。三个较早的捕获测试脚本已记入 REMOVALS.md，并不再保留在仓库中。
 
 <a id="section-15"></a>
 ## 15. 植物与葡萄的特殊问题
@@ -506,7 +506,7 @@ DS14 中已收录的公开发表葡萄古DNA数据集，以及用于流程测试
 
 ### 校验清单
 
-现有的 `SHA256SUMS`（本次更新不改）记录原始文件（`README.md`、`README.zh.md`、`ADDITIONS.tsv`、`catalog/CATALOG.tsv`、`docs/WORKFLOW.md` 和 `docs/WORKFLOW.zh.md`）的哈希。本次更新在 README 和目录末尾追加内容之后，那份较早清单里的 README 和 CATALOG 哈希将不再匹配。`SHA256SUMS.v2` 记录后来新增或追加的那些文件的哈希。`ADDITIONS.tsv` 是现有目录追加前的一份未改动的早期副本（与追加前的现有 CATALOG 哈希相同），本次更新不更新它。
+本仓库中的校验清单是 `SHA256SUMS.v2`，记录原有短清单之后新增或扩充的教学文件。
 
 ### 新增或修订的教学文件
 
@@ -514,7 +514,7 @@ DS14 中已收录的公开发表葡萄古DNA数据集，以及用于流程测试
 - `SHA256SUMS.v2` — 后来新增或追加的那些文件的哈希（本次更新唯一的额外清单）
 - `DOI_CHECKS.tsv`、`DOI_CHECKS.NOTES.md`
 - `SOURCES_READ.tsv`
-- `REMOVALS.md`、`REMOVALS.zh.md` — 仅建议淘汰清单，推荐方案 B，这里不删除任何文件
+- `REMOVALS.md`、`REMOVALS.zh.md` — 已从仓库中移除的捕获测试脚本记录
 - `docs/01_published_grape_adna.md` 及 `.zh.md`
 - `docs/02_authentication_damage.md` 及 `.zh.md`
 - `docs/03_contamination.md` 及 `.zh.md`
@@ -523,6 +523,6 @@ DS14 中已收录的公开发表葡萄古DNA数据集，以及用于流程测试
 - `scripts/02_map_adna.v2.sh`、`scripts/03_dedup.v2.sh` — 新文件名下的帮助 / `--dry-run` 封装
 - `scripts/figures/copy_adna_schematics.py` — 只复制上述两张 SVG，不生成图
 
-现有的 `scripts/README.md` 不改。因此它的 “Tested?” 表仍只列出 `02_map_adna.sh` 和 `03_dedup.sh`，不会列出 `02_map_adna.v2.sh` 或 `03_dedup.v2.sh`。这两个 `.v2.sh` 封装只是帮助 / `--dry-run` 文档，并不替代现有脚本。它们列在本节和 [CHANGELOG.md](CHANGELOG.md) 中。
+本仓库中的 `scripts/README.md` 说明仍保留的玩具流程和封装。因此它的 “Tested?” 表仍只列出 `02_map_adna.sh` 和 `03_dedup.sh`，不会列出 `02_map_adna.v2.sh` 或 `03_dedup.v2.sh`。这两个 `.v2.sh` 封装只是帮助 / `--dry-run` 文档，并不替代现有脚本。它们列在本节和 [CHANGELOG.md](CHANGELOG.md) 中。
 
 这些教学文件的修订记录见 [CHANGELOG.md](CHANGELOG.md)。
