@@ -1,13 +1,6 @@
 # scripts (new files)
 
-These files are **added** alongside the existing capture scripts. This update does not modify:
-
-- `adna_capture_pipeline_generator.sh`
-- `collect_mapping_stats.sh`
-- `dsdna_preprocess.sh`
-- `run_mapdamage.sh`
-
-or any file under `notes/`. If a published parameter string is compared against those scripts, quote the existing script values verbatim. Citations for production tools are in the README catalogue rows. DeDup is described in Peltzer et al. 2016 Genome Biology (doi:10.1186/s13059-016-0918-z).
+The Python toy chain and the mapping wrappers live here. `scripts/run_mapdamage.sh` is an existing mapDamage2 wrapper and is not modified by the toy-chain files. Files under `notes/` are historical lab notes. If a published parameter string is compared against a remaining script, quote the script values verbatim. Citations for production tools are in the README catalogue rows. DeDup is described in Peltzer et al. 2016 Genome Biology (doi:10.1186/s13059-016-0918-z).
 
 The Python toy chain starts from `testdata/toy_ref.fa` (a 2 kb random sequence, not ancient grape data):
 
