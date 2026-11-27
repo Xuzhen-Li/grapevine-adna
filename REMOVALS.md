@@ -1,13 +1,13 @@
-# REMOVALS.md — proposed retirement list (nothing is deleted in this addition)
+# REMOVALS.md — proposed retirement list (nothing is deleted in this update)
 
-The repository owner reviews this list before any pull request that would delete files. This addition appends material to the live `README.md`, `README.zh.md`, and `catalog/CATALOG.tsv`; it also adds new teaching files. It does not modify the live `scripts/02_map_adna.sh` or `scripts/03_dedup.sh`. Every existing live line in the README files and the catalogue is unchanged. New wrapper versions are `scripts/02_map_adna.v2.sh` and `scripts/03_dedup.v2.sh`. The scripts named below remain in the repository until the repository owner approves a removal.
+Please check this list before any pull request that would delete files. This update appends material to the existing `README.md`, `README.zh.md`, and `catalog/CATALOG.tsv`; it also adds new teaching files. It does not modify the existing `scripts/02_map_adna.sh` or `scripts/03_dedup.sh`. Every existing line in the README files and the catalogue is unchanged. New wrapper versions are `scripts/02_map_adna.v2.sh` and `scripts/03_dedup.v2.sh`. The scripts named below remain in the repository until a removal is approved.
 
 File-by-file reads were done on the inventory clone of commit b6e4302e (2026-11-15 17:29 CST), using only `git --no-optional-locks rev-parse` / `ls-files` (no `git status` on that clone). Paths below are repository-relative.
 
-## Two options (the repository owner decides; nothing is deleted here)
+## Two options (either choice is possible; nothing is deleted here)
 
 - **Option A.** Move the three scripts to `scripts/legacy/` and leave a short stub at each old path, labelled “historical, not recommended.” The following cross-references would then need a one-line update or they will break: README.md and README.zh.md around the current L385; `scripts/README.md` L5–7; CATALOG A14; ADDITIONS L60; `notes/cap_test.md` L9 and L19; `docs/04_capture_shotgun_lowcov.md` L23 (alignment reminders that name the generator and `dsdna_preprocess.sh`) and L55 (claim–source table row on those scripts); `docs/04_capture_shotgun_lowcov.zh.md` L9; `SOURCES_READ.tsv` L88; `CHANGELOG.md` L13.
-- **Option B.** Keep the three scripts in place and add the same “historical, not recommended” note at the top of each file. **Until a production pipeline is validated, option B is the more conservative choice, and is the recommendation of this addition.** The new `scripts/02_map_adna.v2.sh` and `scripts/03_dedup.v2.sh` are dry-run / help wrappers only; they do not yet replace the old capture-test record. The live `scripts/02_map_adna.sh` and `scripts/03_dedup.sh` are left byte-identical.
+- **Option B.** Keep the three scripts in place and add the same “historical, not recommended” note at the top of each file. **Until a production pipeline is validated, option B is the more conservative choice, and is the recommendation of this update.** The new `scripts/02_map_adna.v2.sh` and `scripts/03_dedup.v2.sh` are dry-run / help wrappers only; they do not yet replace the old capture-test record. The existing `scripts/02_map_adna.sh` and `scripts/03_dedup.sh` are left byte-identical.
 
 ## Keep
 
@@ -15,7 +15,7 @@ File-by-file reads were done on the inventory clone of commit b6e4302e (2026-11-
 |---|---|
 | `scripts/00_sim_damaged_fastq.py` through `scripts/07_authentication_summary.py`, `scripts/run_toy_pipeline.sh`, `testdata/` | Newly merged toy chain. The scripts README records which steps were tested. The simulator plants only 5-prime C-to-T, so the toy pattern is not a ds, ss, or UDG-treated library. |
 | `scripts/run_mapdamage.sh` | Short, generic mapDamage2 wrapper. Line 6 is, verbatim, `mapDamage -i "$BAM" -r "$REF" -d "$OUT" --merge-reference-sequences`. This is the replacement named for the mapDamage step of the old scripts. Still the right thin wrapper for a named step. |
-| `scripts/README.md`, `docs/WORKFLOW.md`, `docs/WORKFLOW.zh.md`, the main README files, `catalog/CATALOG.tsv` | Current teaching and workflow text. This addition appends a section to the live README files and appends rows to the live catalogue; it does not replace existing live lines. |
+| `scripts/README.md`, `docs/WORKFLOW.md`, `docs/WORKFLOW.zh.md`, the main README files, `catalog/CATALOG.tsv` | Current teaching and workflow text. This update appends a section to the existing README files and appends rows to the existing catalogue; it does not replace existing lines. |
 | `notes/cap_test.md`, `notes/mergeBAM.md`, `notes/check_pcrbias.md` | Historical, already desensitised lab notes. They document what was run; they are not proposed as the production protocol. `mergeBAM.md` also records a GATK HaplotypeCaller gVCF loop, which is not the low-coverage route taught in chapter 4. |
 
 ## Propose to retire (list only)
@@ -32,4 +32,4 @@ Parameters quoted from the old scripts (for example `-l 1024 -n 0.01` versus `-l
 
 `dsdna_preprocess.sh` line 12 uses `--minlength 30`, which matches the WORKFLOW default; the generator uses `--minlength 25`.
 
-No file listed here has been deleted, moved or renamed in this addition.
+No file listed here has been deleted, moved or renamed in this update.

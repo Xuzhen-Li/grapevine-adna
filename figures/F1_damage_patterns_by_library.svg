@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="920" height="420" viewBox="0 0 920 420" role="img" aria-labelledby="t1 d1">
   <title id="t1">Schematic damage patterns by library type and UDG treatment</title>
-  <desc id="d1">Original schematic for grapevine-adna chapter 2. Double-stranded libraries typically show C-to-T at the 5-prime end and G-to-A at the 3-prime end; single-stranded libraries show C-to-T at both ends; UDG-half typically leaves residual terminal damage. Plant CG/CHG/CHH residual damage after full UDG is not drawn, because this addition did not open a plant source for that claim.</desc>
+  <desc id="d1">Original schematic for grapevine-adna chapter 2. Double-stranded libraries typically show C-to-T at the 5-prime end and G-to-A at the 3-prime end; single-stranded libraries show C-to-T at both ends; UDG-half typically leaves residual terminal damage. Plant CG/CHG/CHH residual damage after full UDG is not drawn, because no plant source was opened for that claim.</desc>
   <rect width="920" height="420" fill="#fbfaf6"/>
   <text x="460" y="28" text-anchor="middle" font-family="Georgia, serif" font-size="16">Damage patterns by library type (schematic, not a measured grape profile)</text>
   <text x="460" y="48" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#444">Opened Briggs and Rohland abstracts support damage at molecule ends. The library-type panels are schematic and [待确认]. Not a result we generated.</text>

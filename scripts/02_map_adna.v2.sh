@@ -8,8 +8,8 @@
 # Schubert 2012 also states that BWA's "-n option" has "a default value of 0.04".
 # Existing repository scripts must be quoted verbatim if compared.
 # Untested in this environment (`bwa` is not installed).
-# This file is scripts/02_map_adna.v2.sh. The live scripts/02_map_adna.sh is
-# unchanged in this addition.
+# This file is scripts/02_map_adna.v2.sh. The existing scripts/02_map_adna.sh is
+# unchanged in this update.
 #
 # AdapterRemoval length default and option names, opened 2026-11-15 CST:
 # v2.3.4 man page (AdapterRemoval.1, 19,302 bytes): "--minlength length"

@@ -5,8 +5,8 @@
 # Citation: Peltzer et al. 2016 Genome Biology, doi:10.1186/s13059-016-0918-z
 # (EAGER; DeDup is introduced there for merged paired-end reads).
 # Code: https://github.com/apeltzer/DeDup
-# This file is scripts/03_dedup.v2.sh. The live scripts/03_dedup.sh is
-# unchanged in this addition.
+# This file is scripts/03_dedup.v2.sh. The existing scripts/03_dedup.sh is
+# unchanged in this update.
 
 set -Ceu
 if [ "${1:-}" = "--help" ] || [ "${1:-}" = "--dry-run" ]; then
