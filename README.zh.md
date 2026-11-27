@@ -93,7 +93,7 @@
 - **Extraction and library blanks**（方案）— 每批都做提取空白和文库空白并测序。葡萄酒实验室是现代葡萄 DNA 的高风险环境。 输入：blank reactions。输出：blank libraries, contamination metrics。版本：n/a（standard aDNA practice）。  
   注：Modern cultivar DNA in a viticulture institute can look like a true ancient match. Treat unexpected clone matches with extra contamination checks.
 - **Cooper and Poinar 2000 authenticity criteria**（文献）— 古DNA工作的经典真实性标准。 输入：n/a。输出：n/a。版本：n/a（Crossref-verified in the literature review, 2026-11-14 CST）。 [doi:10.1126/science.289.5482.1139b](https://doi.org/10.1126/science.289.5482.1139b) · [link](https://doi.org/10.1126/science.289.5482.1139b)
-- **Gilbert et al. 2005 authenticity critique**（文献）— 对古DNA真实性标准的批评和修订。 输入：n/a。输出：n/a。版本：n/a（Crossref-verified in the literature review, 2026-11-14 CST）。 [doi:10.1016/j.tree.2005.07.005](https://doi.org/10.1016/j.tree.2005.07.005) · [link](https://doi.org/10.1016/j.tree.2005.07.005)
+- **Gilbert et al. 2005 authenticity critique**（文献）— 对古DNA真实性标准的批评和修订。输入：n/a。输出：n/a。版本：n/a（Crossref 核对，2026-11-14 CST）。[doi:10.1016/j.tree.2005.07.005](https://doi.org/10.1016/j.tree.2005.07.005) · [link](https://doi.org/10.1016/j.tree.2005.07.005)
 - **Llamas et al. 2017 contamination control**（文献）— 从田野到实验室的污染控制，原文面向人类古DNA，但实验室规则仍可借鉴。 输入：n/a。输出：n/a。版本：n/a（Crossref-verified in the literature review, 2026-11-14 CST）。 [doi:10.1080/20548923.2016.1258824](https://doi.org/10.1080/20548923.2016.1258824) · [link](https://doi.org/10.1080/20548923.2016.1258824)
 - **Fulton and Shapiro 2019 lab setup**（文献）— 如何建立和运行专门的古DNA洁净实验室。 输入：n/a。输出：n/a。版本：n/a（Crossref-verified in the literature review, 2026-11-14 CST）。 [doi:10.1007/978-1-4939-9176-1_1](https://doi.org/10.1007/978-1-4939-9176-1_1) · [link](https://doi.org/10.1007/978-1-4939-9176-1_1)
 - **Knapp et al. 2012 lab setup**（文献）— 古DNA实验室的实际设计和流程。 输入：n/a。输出：n/a。版本：n/a（Crossref-verified in the literature review, 2026-11-14 CST）。 [doi:10.1016/j.aanat.2011.03.008](https://doi.org/10.1016/j.aanat.2011.03.008) · [link](https://doi.org/10.1016/j.aanat.2011.03.008)
@@ -169,7 +169,7 @@
 - **Organelle-to-nuclear read ratio (idea)**（想法）— 把质体/线粒体与核读段的比例和现代葡萄基线比较，作为保存状况和真实性的辅助指标。核基因组里的质体插入（NUPT）会干扰，需要竞争性比对。 输入：BAM。输出：organelle-to-nuclear ratio。版本：n/a（methods review, 2026-11-14 CST）。
 - **Maricic et al. 2010 homemade capture**（文献）— 用于多重古DNA文库的低成本自制捕获探针。 输入：n/a。输出：n/a。版本：n/a（Crossref-verified in the literature review, 2026-11-14 CST）。 [doi:10.1371/journal.pone.0014004](https://doi.org/10.1371/journal.pone.0014004) · [link](https://doi.org/10.1371/journal.pone.0014004)
 - **Carpenter et al. 2013 whole-genome capture**（文献）— 全基因组溶液内捕获（WISC），用于提高内源含量。 输入：n/a。输出：n/a。版本：n/a（Crossref-verified in the literature review, 2026-11-14 CST）。 [doi:10.1016/j.ajhg.2013.10.002](https://doi.org/10.1016/j.ajhg.2013.10.002) · [link](https://doi.org/10.1016/j.ajhg.2013.10.002)
-- **Cruz-Dávalos et al. 2017 capture conditions**（文献）— 针对溶液内古DNA捕获条件（温度、探针、轮次）的测试。 输入：n/a。输出：n/a。版本：n/a（Crossref-verified in the literature review, 2026-11-14 CST）。 [doi:10.1111/1755-0998.12595](https://doi.org/10.1111/1755-0998.12595) · [link](https://doi.org/10.1111/1755-0998.12595)
+- **Cruz-Dávalos et al. 2017 capture conditions**（文献）— 针对溶液内古DNA捕获条件（温度、探针、轮次）的测试。输入：n/a。输出：n/a。版本：n/a（Crossref 核对，2026-11-14 CST）。[doi:10.1111/1755-0998.12595](https://doi.org/10.1111/1755-0998.12595) · [link](https://doi.org/10.1111/1755-0998.12595)
 - **Laucou et al. 2018 10K grape SNP panel**（文献）— 用于古籽捕获的葡萄 10K SNP 集（783 个基因型，从 18K 芯片中选出 10,207 个 SNP）。 输入：n/a。输出：n/a。版本：n/a（Crossref-verified in the literature review, 2026-11-14 CST）。 [doi:10.1371/journal.pone.0192540](https://doi.org/10.1371/journal.pone.0192540) · [link](https://doi.org/10.1371/journal.pone.0192540)
 
 <a id="section-6"></a>
@@ -228,7 +228,7 @@
 - **vg Giraffe**（工具）— 把古代读段比对到葡萄泛基因组图上，并与线性比对的等位基因平衡做比较（项目 20）。 输入：FASTQ, graph。输出：GAM/BAM, VCF。版本：1.78.0（see vitis-popgen section 11; also AM17）。 [link](https://github.com/vgteam/vg)  
   注：Test on downsampled modern grapes before ancient seeds.
 - **samtools + Picard MarkDuplicates or DeDup**（工具）— 比对后的 BAM 过滤。对合并后的单端古DNA读段，默认用 DeDup 去重复，因为它同时使用两端坐标；Picard MarkDuplicates 只看 5 端坐标，会多删。MarkDuplicates 可作对照。 输入：SAM/BAM。输出：deduplicated BAM, flagstat。版本：samtools 1.25; Picard 3.5.0; DeDup 0.12.9（versions checked 2026-11-14 CST）。 [doi:10.1093/gigascience/giab008](https://doi.org/10.1093/gigascience/giab008) · [link](https://github.com/samtools/samtools)  
-  注：Default for collapsed reads: DeDup. Quote the reason when the other tool is used. samtools 1.25; Picard 3.5.0; DeDup 0.12.9 (versions from the v1 check).
+  注：合并读段默认使用 DeDup；若改用其他工具需说明原因。记录版本：samtools 1.25；Picard 3.5.0；DeDup 0.12.9。
 - **CircularMapper**（工具）— 改善对环状细胞器参考（质体、线粒体）的比对。 输入：FASTQ, circular FASTA。输出：BAM。版本：1.93.5（GitHub apeltzer/CircularMapper + Bioconda, 2026-11-14 CST）。 [link](https://github.com/apeltzer/CircularMapper)  
   注：Complementary to nuclear bwa aln, not a replacement.
 - **bowtie2**（工具）— nf-core/eager 提供的备选局部比对器。 输入：FASTQ, reference。输出：BAM。版本：2.5.5（GitHub BenLangmead/bowtie2 + Bioconda, 2026-11-14 CST）。 [link](https://github.com/BenLangmead/bowtie2)  
@@ -493,25 +493,25 @@ DS14 中已收录的公开发表葡萄古DNA数据集，以及用于流程测试
 
 以上各行是仓库现有首页（提交 b6e4302e，2026-11-15 17:29 CST）。本节只追加，不替换首页。上面的每一行都保持原样。
 
-本次追加在 live 的 `README.md`、`README.zh.md` 和 `catalog/CATALOG.tsv` 末尾追加内容，并新增教学文件。不修改 live 的 `scripts/02_map_adna.sh` 和 `scripts/03_dedup.sh`。README 和目录里已有的每一行都保持原样。
+本次更新在现有的 `README.md`、`README.zh.md` 和 `catalog/CATALOG.tsv` 末尾追加内容，并新增教学文件。不修改现有的 `scripts/02_map_adna.sh` 和 `scripts/03_dedup.sh`。README 和目录里已有的每一行都保持原样。
 
-### 对 live 首页行的勘误（只做指针；live 各行不改）
+### 对现有首页行的勘误（只做指针；现有各行不改）
 
-下面两条 live 首页说法，在教学上由相应章节和目录勘误行取代。live 原文本身不改。
+下面两条现有首页说法，在教学上由相应章节和目录勘误行取代。现有原文本身不改。
 
-- live 第 286 行（schmutzi：“为人类设计的线粒体污染估计。不是葡萄核基因组污染工具。”）— 见 [docs/03_contamination.md](docs/03_contamination.md) 和目录 E001 行。官方 schmutzi README 的 Nuclear 节写明，contDeam 可在所列前提下用于核数据，风险自负；核样本推荐 DICE。
-- live 第 264 行（pyDamage：“适合参考很多的情况（宏基因组或竞争性比对）”）— 见 [docs/02_authentication_damage.md](docs/02_authentication_damage.md) 和目录 E004 行。按 contig 估计损伤的说明面向宏基因组；不把它写成竞争性比对工具。
+-现有第 286 行（schmutzi：“为人类设计的线粒体污染估计。不是葡萄核基因组污染工具。”）— 见 [docs/03_contamination.md](docs/03_contamination.md) 和目录 E001 行。官方 schmutzi README 的 Nuclear 节写明，contDeam 可在所列前提下用于核数据，风险自负；核样本推荐 DICE。
+-现有第 264 行（pyDamage：“适合参考很多的情况（宏基因组或竞争性比对）”）— 见 [docs/02_authentication_damage.md](docs/02_authentication_damage.md) 和目录 E004 行。按 contig 估计损伤的说明面向宏基因组；不把它写成竞争性比对工具。
 
-live 的 hapCon 备注（第 285 行）和 live 目录 hapCon 行（CATALOG 第 40 行）写有 “Keep the entry as a warning, like schmutzi.” 这一比较由扩展后的 E001 勘误覆盖；这些 live 行也不改。
+现有的 hapCon 备注（第 285 行）和现有目录 hapCon 行（CATALOG 第 40 行）写有 “Keep the entry as a warning, like schmutzi.” 这一比较由扩展后的 E001 勘误覆盖；这些现有行也不改。
 
 ### 校验清单
 
-live 的 `SHA256SUMS`（本次追加不改）记录原始文件（`README.md`、`README.zh.md`、`ADDITIONS.tsv`、`catalog/CATALOG.tsv`、`docs/WORKFLOW.md` 和 `docs/WORKFLOW.zh.md`）的哈希。本次追加追加 README 和目录之后，那份较早清单里的 README 和 CATALOG 哈希将不再匹配。`SHA256SUMS.v2` 记录后来新增或追加的那些文件的哈希。`ADDITIONS.tsv` 是 live 目录追加前的一份冻结副本（与追加前的 live CATALOG 哈希相同），本次追加不更新它。
+现有的 `SHA256SUMS`（本次更新不改）记录原始文件（`README.md`、`README.zh.md`、`ADDITIONS.tsv`、`catalog/CATALOG.tsv`、`docs/WORKFLOW.md` 和 `docs/WORKFLOW.zh.md`）的哈希。本次更新在 README 和目录末尾追加内容之后，那份较早清单里的 README 和 CATALOG 哈希将不再匹配。`SHA256SUMS.v2` 记录后来新增或追加的那些文件的哈希。`ADDITIONS.tsv` 是现有目录追加前的一份未改动的早期副本（与追加前的现有 CATALOG 哈希相同），本次更新不更新它。
 
 ### 新增或修订的教学文件
 
 - `CHANGELOG.md` — 这些教学文件的公开修订摘要
-- `SHA256SUMS.v2` — 后来新增或追加的那些文件的哈希（本次追加唯一的额外清单）
+- `SHA256SUMS.v2` — 后来新增或追加的那些文件的哈希（本次更新唯一的额外清单）
 - `DOI_CHECKS.tsv`、`DOI_CHECKS.NOTES.md`
 - `SOURCES_READ.tsv`
 - `REMOVALS.md`、`REMOVALS.zh.md` — 仅建议淘汰清单，推荐方案 B，这里不删除任何文件
@@ -523,6 +523,6 @@ live 的 `SHA256SUMS`（本次追加不改）记录原始文件（`README.md`、
 - `scripts/02_map_adna.v2.sh`、`scripts/03_dedup.v2.sh` — 新文件名下的帮助 / `--dry-run` 封装
 - `scripts/figures/copy_adna_schematics.py` — 只复制上述两张 SVG，不生成图
 
-live 的 `scripts/README.md` 不改。因此它的 “Tested?” 表仍只列出 `02_map_adna.sh` 和 `03_dedup.sh`，不会列出 `02_map_adna.v2.sh` 或 `03_dedup.v2.sh`。这两个 `.v2.sh` 封装只是帮助 / `--dry-run` 文档，并不替代 live 脚本。它们列在本节和 [CHANGELOG.md](CHANGELOG.md) 中。
+现有的 `scripts/README.md` 不改。因此它的 “Tested?” 表仍只列出 `02_map_adna.sh` 和 `03_dedup.sh`，不会列出 `02_map_adna.v2.sh` 或 `03_dedup.v2.sh`。这两个 `.v2.sh` 封装只是帮助 / `--dry-run` 文档，并不替代现有脚本。它们列在本节和 [CHANGELOG.md](CHANGELOG.md) 中。
 
 这些教学文件的修订记录见 [CHANGELOG.md](CHANGELOG.md)。

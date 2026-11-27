@@ -169,7 +169,7 @@ Shallow shotgun sequencing can screen a library; deeper shotgun or in-solution c
 - **Organelle-to-nuclear read ratio (idea)** (idea) — Compare plastid and mitochondrial versus nuclear read ratios with a modern grape baseline as a secondary preservation or authenticity indicator. Nuclear plastid insertions (NUPT) can interfere; use competitive mapping. Input: BAM. Output: organelle-to-nuclear ratio. Version: n/a (methods review, 2026-11-14 CST).
 - **Maricic et al. 2010 homemade capture** (paper) — Low-cost homemade capture baits for multiplexed aDNA libraries. Input: n/a. Output: n/a. Version: n/a (Crossref-verified in the literature review, 2026-11-14 CST). [doi:10.1371/journal.pone.0014004](https://doi.org/10.1371/journal.pone.0014004) · [link](https://doi.org/10.1371/journal.pone.0014004)
 - **Carpenter et al. 2013 whole-genome capture** (paper) — Whole-genome in-solution capture (WISC) to raise endogenous content. Input: n/a. Output: n/a. Version: n/a (Crossref-verified in the literature review, 2026-11-14 CST). [doi:10.1016/j.ajhg.2013.10.002](https://doi.org/10.1016/j.ajhg.2013.10.002) · [link](https://doi.org/10.1016/j.ajhg.2013.10.002)
-- **Cruz-Dávalos et al. 2017 capture conditions** (paper) — Tests of capture conditions (temperature, bait, rounds) for aDNA in solution. Input: n/a. Output: n/a. Version: n/a (Crossref-verified in the literature review, 2026-11-14 CST). [doi:10.1111/1755-0998.12595](https://doi.org/10.1111/1755-0998.12595) · [link](https://doi.org/10.1111/1755-0998.12595)
+- **Cruz-Dávalos et al. 2017 capture conditions** (paper) — Tests of capture conditions (temperature, bait, rounds) for aDNA in solution. Input: n/a. Output: n/a. Version: n/a (Crossref-verified, 2026-11-14 CST). [doi:10.1111/1755-0998.12595](https://doi.org/10.1111/1755-0998.12595) · [link](https://doi.org/10.1111/1755-0998.12595)
 - **Laucou et al. 2018 10K grape SNP panel** (paper) — The 10K grape SNP set (783 genotypes, 10,207 SNPs from an 18K array) used for pip capture. Input: n/a. Output: n/a. Version: n/a (Crossref-verified in the literature review, 2026-11-14 CST). [doi:10.1371/journal.pone.0192540](https://doi.org/10.1371/journal.pone.0192540) · [link](https://doi.org/10.1371/journal.pone.0192540)
 
 <a id="section-6"></a>
@@ -228,7 +228,7 @@ Default alignment uses bwa aln with the seed disabled. Document each parameter a
 - **vg Giraffe** (tool) — Map ancient reads to a Vitis pangenome graph and compare allele balance with linear mapping (project 20). Input: FASTQ, graph. Output: GAM/BAM, VCF. Version: 1.78.0 (see vitis-popgen section 11; also AM17). [link](https://github.com/vgteam/vg)  
   Note: Test on downsampled modern grapes before ancient seeds.
 - **samtools + Picard MarkDuplicates or DeDup** (tool) — Post-mapping BAM filters. For collapsed single-end aDNA reads, DeDup is the default duplicate marker because it uses both endpoints; Picard MarkDuplicates uses only the 5-prime coordinate and can over-remove. Keep MarkDuplicates as a comparison. Input: SAM/BAM. Output: deduplicated BAM, flagstat. Version: samtools 1.25; Picard 3.5.0; DeDup 0.12.9 (versions checked 2026-11-14 CST). [doi:10.1093/gigascience/giab008](https://doi.org/10.1093/gigascience/giab008) · [link](https://github.com/samtools/samtools)  
-  Note: Default for collapsed reads: DeDup. Quote the reason when the other tool is used. samtools 1.25; Picard 3.5.0; DeDup 0.12.9 (versions from the v1 check).
+  Note: Default for collapsed reads: DeDup. Quote the reason when the other tool is used. samtools 1.25; Picard 3.5.0; DeDup 0.12.9 (recorded versions).
 - **CircularMapper** (tool) — Improves mapping to circular organelle references (plastid, mitochondrion). Input: FASTQ, circular FASTA. Output: BAM. Version: 1.93.5 (GitHub apeltzer/CircularMapper + Bioconda, 2026-11-14 CST). [link](https://github.com/apeltzer/CircularMapper)  
   Note: Complementary to nuclear bwa aln, not a replacement.
 - **bowtie2** (tool) — Alternative local aligner offered by nf-core/eager. Input: FASTQ, reference. Output: BAM. Version: 2.5.5 (GitHub BenLangmead/bowtie2 + Bioconda, 2026-11-14 CST). [link](https://github.com/BenLangmead/bowtie2)  
@@ -491,22 +491,22 @@ These tools are intentionally shared across both catalogues with identical detai
 
 ## Teaching chapters added on 2026-11-15
 
-The lines above are the live repository homepage (commit b6e4302e, 2026-11-15 17:29 CST). This section is appended and does not replace that homepage. Every line above is unchanged.
+The lines above are the existing repository homepage (commit b6e4302e, 2026-11-15 17:29 CST). This section is appended and does not replace that homepage. Every line above is unchanged.
 
-This addition appends material to the live `README.md`, `README.zh.md`, and `catalog/CATALOG.tsv`; it also adds new teaching files. It does not modify the live `scripts/02_map_adna.sh` or `scripts/03_dedup.sh`. Every existing live line in the README files and the catalogue is unchanged.
+This update appends material to the existing `README.md`, `README.zh.md`, and `catalog/CATALOG.tsv`; it also adds new teaching files. It does not modify the existing `scripts/02_map_adna.sh` or `scripts/03_dedup.sh`. Every existing line in the README files and the catalogue is unchanged.
 
-### Errata for live homepage lines (pointers only; live lines unchanged)
+### Errata for existing homepage lines (pointers only; existing lines unchanged)
 
-Two live homepage claims are superseded, as teaching, by the chapters and catalogue errata below. The live lines themselves are not edited.
+Two existing homepage claims are superseded, as teaching, by the chapters and catalogue errata below. The existing lines themselves are not edited.
 
-- Live L286 (`schmutzi`: “Mitochondrial contamination estimator written for humans. Not a grape nuclear contamination tool.”) — see [docs/03_contamination.md](docs/03_contamination.md) and catalogue row E001. The official schmutzi README Nuclear section says that contDeam can be used on nuclear data at the user's own risk under stated conditions; DICE is recommended for nuclear samples.
-- Live L264 (`pyDamage`: “useful when many references are involved (metagenomes or competitive mapping)”) — see [docs/02_authentication_damage.md](docs/02_authentication_damage.md) and catalogue row E004. Per-contig damage estimation is described for metagenomic use; it is not taught as a competitive-mapping tool.
+- Existing L286 (`schmutzi`: “Mitochondrial contamination estimator written for humans. Not a grape nuclear contamination tool.”) — see [docs/03_contamination.md](docs/03_contamination.md) and catalogue row E001. The official schmutzi README Nuclear section says that contDeam can be used on nuclear data at the user's own risk under stated conditions; DICE is recommended for nuclear samples.
+- Existing L264 (`pyDamage`: “useful when many references are involved (metagenomes or competitive mapping)”) — see [docs/02_authentication_damage.md](docs/02_authentication_damage.md) and catalogue row E004. Per-contig damage estimation is described for metagenomic use; it is not taught as a competitive-mapping tool.
 
-The live hapCon note (L285) and the live catalogue hapCon row (CATALOG L40) say “Keep the entry as a warning, like schmutzi.” That comparison is covered by the extended E001 note; those live lines are not edited.
+The existing hapCon note (L285) and the existing catalogue hapCon row (CATALOG L40) say “Keep the entry as a warning, like schmutzi.” That comparison is covered by the extended E001 note; those existing lines are not edited.
 
 ### Manifests
 
-The live `SHA256SUMS` file (not edited in this addition) covers the original files (`README.md`, `README.zh.md`, `ADDITIONS.tsv`, `catalog/CATALOG.tsv`, `docs/WORKFLOW.md`, and `docs/WORKFLOW.zh.md`). After the appended README and catalogue in this addition, the README and CATALOG hashes in that earlier manifest will no longer match. `SHA256SUMS.v2` covers the files added or extended later. `ADDITIONS.tsv` is a frozen earlier copy of the live catalogue (the same hash as the live CATALOG before these appended rows) and is not updated here.
+The existing `SHA256SUMS` file (not edited in this update) covers the original files (`README.md`, `README.zh.md`, `ADDITIONS.tsv`, `catalog/CATALOG.tsv`, `docs/WORKFLOW.md`, and `docs/WORKFLOW.zh.md`). After the README and catalogue are appended in this update, the README and CATALOG hashes in that earlier manifest will no longer match. `SHA256SUMS.v2` covers the files added or extended later. `ADDITIONS.tsv` is an unchanged earlier copy of the existing catalogue (the same hash as the existing CATALOG before these appended rows) and is not updated here.
 
 ### New or revised teaching files
 
@@ -523,6 +523,6 @@ The live `SHA256SUMS` file (not edited in this addition) covers the original fil
 - `scripts/02_map_adna.v2.sh`, `scripts/03_dedup.v2.sh` — help / `--dry-run` wrappers under new filenames
 - `scripts/figures/copy_adna_schematics.py` — copies the two SVG files; it does not generate the drawings
 
-The live `scripts/README.md` is not edited. Its “Tested?” table therefore still lists `02_map_adna.sh` and `03_dedup.sh`, and does not list `02_map_adna.v2.sh` or `03_dedup.v2.sh`. Those `.v2.sh` wrappers are help / `--dry-run` documentation only; they do not replace the live scripts. They are listed in this section and in [CHANGELOG.md](CHANGELOG.md).
+The existing `scripts/README.md` is not edited. Its “Tested?” table therefore still lists `02_map_adna.sh` and `03_dedup.sh`, and does not list `02_map_adna.v2.sh` or `03_dedup.v2.sh`. Those `.v2.sh` wrappers are help / `--dry-run` documentation only; they do not replace the existing scripts. They are listed in this section and in [CHANGELOG.md](CHANGELOG.md).
 
 See [CHANGELOG.md](CHANGELOG.md) for the revision history of these teaching files.

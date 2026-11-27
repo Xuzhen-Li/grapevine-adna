@@ -33,5 +33,5 @@ Weiß et al. (2016, abstract and full text, PMC4929915; doi:10.1098/rsos.160239)
 | PMDtools / Skoglund 2014: separate endogenous aDNA from modern contamination with post-mortem damage | doi:10.1073/pnas.1318934111 ; https://github.com/pontussk/PMDtools | Abstract; README | Abstract + README (3,897 bytes) |
 | DamageProfiler is a damage-pattern calculator also documented in the nf-core/eager README | doi:10.1093/bioinformatics/btab190 ; https://github.com/Integrative-Transcriptomics/DamageProfiler | Paper title / README as opened 2026-11-15 CST (3,850 bytes) | Paper DOI + DamageProfiler README and nf-core/eager README |
 | Briggs 2010: USER removes uracils; Neandertal DNA retains in vivo CpG methylation | doi:10.1093/nar/gkp1163 | Sentences quoted above | Full text (PMC2847228) |
-| Residual C-to-T after full UDG in plant CG/CHG/CHH contexts | — | — | Not read in a plant source this addition; **[待确认]** |
+| Residual C-to-T after full UDG in plant CG/CHG/CHH contexts | — | — | Not read in a plant source in this update; **[待确认]** |
 | Weiß 2016: damage and decay kinetics in plant herbarium DNA | doi:10.1098/rsos.160239 | Title | Abstract + full text (PMC4929915) |

@@ -6,7 +6,7 @@ Ginolhac 等（2011，摘要；doi:10.1093/bioinformatics/btr347；刊期 2011�
 
 Skoglund 等（2014，摘要）用死后损伤把内源古代 DNA 和现代污染分开，这是 PMDtools 的来源。DamageProfiler（Neukamm 等 2021，doi:10.1093/bioinformatics/btab190；README 3,850 字节，2026-11-15 CST 已打开）是一种损伤模式计算工具，也出现在 nf-core/eager 的说明里。pyDamage 按 contig 估计损伤，打开的 README 和论文把它用于宏基因组；不能把它写成竞争性比对工具，也不是葡萄专用鉴定器。
 
-已打开的 Briggs 和 Rohland 摘要支持损伤集中在分子末端。双链 / 单链 / 半 UDG 的具体对应关系（包括末端一两个碱基的残余损伤）在本次追加打开的文本和现有 WORKFLOW.md 里都不是现成的句子，仍标 **[待确认]**。半 UDG 应引用 Rohland 等那篇的原文。把“半 UDG 后两端各剪 2 nt”当作葡萄默认值，在没有对应文库类型的出处之前标为 **[待确认]**。
+已打开的 Briggs 和 Rohland 摘要支持损伤集中在分子末端。双链 / 单链 / 半 UDG 的具体对应关系（包括末端一两个碱基的残余损伤）在本次更新打开的文本和现有 WORKFLOW.md 里都不是现成的句子，仍标 **[待确认]**。半 UDG 应引用 Rohland 等那篇的原文。把“半 UDG 后两端各剪 2 nt”当作葡萄默认值，在没有对应文库类型的出处之前标为 **[待确认]**。
 
 Briggs 等（2010，全文，PMC2847228）题为去除古代 DNA 中的脱氨胞嘧啶并检测体内甲基化。全文写 USER（UDG 加内切酶 VIII）去除尿嘧啶，并且 “Neandertal DNA retains in vivo patterns of CpG methylation”。这是尼安德特人 DNA 上的 CpG 甲基化结果。本组教学章节打开的来源中没有把这句话推广到植物 CG、CHG 或 CHH 的来源。植物上下文里全 UDG 后仍有残余 C-to-T 的说法，标为 **[待确认]**。现有 WORKFLOW 里关于植物 CG/CHG/CHH 的那句，本章不作为已核实事实再写一遍。
 
