@@ -499,8 +499,8 @@ DS14 中已收录的公开发表葡萄古DNA数据集，以及用于流程测试
 
 下面两条现有首页说法，在教学上由相应章节和目录勘误行取代。现有原文本身不改。
 
--现有第 286 行（schmutzi：“为人类设计的线粒体污染估计。不是葡萄核基因组污染工具。”）— 见 [docs/03_contamination.md](docs/03_contamination.md) 和目录 E001 行。官方 schmutzi README 的 Nuclear 节写明，contDeam 可在所列前提下用于核数据，风险自负；核样本推荐 DICE。
--现有第 264 行（pyDamage：“适合参考很多的情况（宏基因组或竞争性比对）”）— 见 [docs/02_authentication_damage.md](docs/02_authentication_damage.md) 和目录 E004 行。按 contig 估计损伤的说明面向宏基因组；不把它写成竞争性比对工具。
+- 现有第 286 行（schmutzi：“为人类设计的线粒体污染估计。不是葡萄核基因组污染工具。”）— 见 [docs/03_contamination.md](docs/03_contamination.md) 和目录 E001 行。官方 schmutzi README 的 Nuclear 节写明，contDeam 可在所列前提下用于核数据，风险自负；核样本推荐 DICE。
+- 现有第 264 行（pyDamage：“适合参考很多的情况（宏基因组或竞争性比对）”）— 见 [docs/02_authentication_damage.md](docs/02_authentication_damage.md) 和目录 E004 行。按 contig 估计损伤的说明面向宏基因组；不把它写成竞争性比对工具。
 
 现有的 hapCon 备注（第 285 行）和现有目录 hapCon 行（CATALOG 第 40 行）写有 “Keep the entry as a warning, like schmutzi.” 这一比较由扩展后的 E001 勘误覆盖；这些现有行也不改。
 
